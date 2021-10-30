@@ -1,14 +1,16 @@
 package com.ctsdev.app.ws.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="user_table", schema = "myapp")
+@Table(name="userdetails", schema = "detailsuser")
 public class User {
 	
 	@Id
+	@Column(name="username")
 	private String username;
 	private String firstname;
 	private String lastname;
