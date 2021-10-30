@@ -2,8 +2,10 @@ package com.ctsdev.app.ws.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="user_table", schema = "myapp")
 public class User {
 	
 	@Id
