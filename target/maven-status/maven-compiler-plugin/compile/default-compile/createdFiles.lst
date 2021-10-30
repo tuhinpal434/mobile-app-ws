@@ -1,0 +1,5 @@
+com\ctsdev\app\ws\entity\User.class
+com\ctsdev\app\ws\MobileAppWsApplication.class
+com\ctsdev\app\ws\service\UserService.class
+com\ctsdev\app\ws\repository\UserRepository.class
+com\ctsdev\app\ws\ui\controller\UserController.class
