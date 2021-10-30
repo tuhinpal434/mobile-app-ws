@@ -21,6 +21,8 @@ import com.ctsdev.app.ws.service.UserService;
 @RequestMapping("/users") //http://localhost:8080/users
 public class UserController {
 	
+	
+	
 	@Autowired
 	private UserService userService;
 	
@@ -28,6 +30,11 @@ public class UserController {
 	public List<User> getAllUser() {
 		
 		return this.userService.fetchAllUser();
+	}
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Welcome!";
 	}
 	
 	@PostMapping
