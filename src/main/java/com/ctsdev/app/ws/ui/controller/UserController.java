@@ -40,13 +40,13 @@ public class UserController {
 	@PostMapping
 	public ResponseEntity<String> createUser(@RequestBody User user){
 		this.userService.saveUser(user);
-		return ResponseEntity.status(HttpStatus.CREATED).body("create user was called");
+		return ResponseEntity.status(HttpStatus.CREATED).body("User has been created");
 	}
 	
 	@PutMapping("/{username}")
 	public ResponseEntity<String> updateUser(@PathVariable String username, @RequestBody User user) {
 		this.userService.updateUser(username,user);
-		return ResponseEntity.status(HttpStatus.OK).body("update user was called");
+		return ResponseEntity.status(HttpStatus.OK).body("User has been updated");
 	}
 	
 	@DeleteMapping("/{username}")
